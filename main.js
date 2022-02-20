@@ -34,6 +34,11 @@ console.log('--------------')
 
 // creating function with a function declaration
 function reverseString(str) {
+  // It's always a good idea to check the input
+  if (typeof str !== 'string' || str.length < 2 ) {
+    return 'Houston? We have a problem...'
+  }
+
   // splitting the string into an array and assigning the result to an array
   let strToArray = str.split('')
 
@@ -54,7 +59,7 @@ function reverseString(str) {
 }
 // This above function has a time complexity of O(n)
 
-console.log(reverseString('Sheelove is getting really good!')) 
+console.log(reverseString('w')) 
 
 
 
